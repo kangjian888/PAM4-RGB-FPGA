@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 18 16:58:06 2019
+# Process ID: 26276
+# Current directory: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8940 C:\Users\KANG Jian\Desktop\PAM4-RGB-FPGA\prj\PAM4_RGB_EQ\PAM4_RGB_EQ.xpr
+# Log file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v} {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+close_sim
+launch_simulation
+source top_tb.tcl
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+close_sim
+launch_simulation
+source top_tb.tcl
+run all
+close_sim
+launch_simulation
+source top_tb.tcl
+restart
+run 10 us
+restart
+run all
+close_sim
+launch_simulation
+source top_tb.tcl
+run all
+close_sim
+open_run synth_1 -name synth_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc}}
+set_property target_constrs_file {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc} [current_fileset -constrset]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_design
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

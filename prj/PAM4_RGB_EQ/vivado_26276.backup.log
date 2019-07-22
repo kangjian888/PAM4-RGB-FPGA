@@ -1,0 +1,1013 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 18 16:58:06 2019
+# Process ID: 26276
+# Current directory: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8940 C:\Users\KANG Jian\Desktop\PAM4-RGB-FPGA\prj\PAM4_RGB_EQ\PAM4_RGB_EQ.xpr
+# Log file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.xpr}
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'V:/vivado/Arm_ipi_repository'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'v:/vivado/Arm_ipi_repository'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 680.215 ; gain = 68.387
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v} {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-2934] 'debounce_inst' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:114]
+ERROR: [VRFC 10-2934] 'OBUFDS_1' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:218]
+ERROR: [VRFC 10-2934] 'OBUFDS_1' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:226]
+ERROR: [VRFC 10-2934] 'OBUFDS_1' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:234]
+ERROR: [VRFC 10-2934] 'OBUFDS_1' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:242]
+ERROR: [VRFC 10-2934] 'OBUFDS_1' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:250]
+ERROR: [VRFC 10-2865] module 'top' ignored due to previous errors [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:9]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-2934] 'debounce_inst' is already declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:114]
+ERROR: [VRFC 10-2865] module 'top' ignored due to previous errors [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:9]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+ERROR: [VRFC 10-2989] 'slow_rst' is not declared [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v:127]
+ERROR: [VRFC 10-2865] module 'top_tb' ignored due to previous errors [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v:10]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v:71]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/KANG -notrace
+couldn't read file "C:/Users/KANG": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 18 17:14:07 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 808.766 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 808.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 808.766 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 808.766 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 808.766 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:01 ; elapsed = 00:05:09 . Memory (MB): peak = 808.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 808.766 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:21:28 ; elapsed = 01:57:05 . Memory (MB): peak = 828.410 ; gain = 19.645
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:18 . Memory (MB): peak = 913.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '18' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.debounce(CLK_PERIOD=50)
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 913.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '28' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 913.770 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:30 ; elapsed = 00:07:03 . Memory (MB): peak = 913.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1205.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.621 ; gain = 469.195
+add_files -fileset constrs_1 -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Jul 18 21:47:42 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Jul 18 21:49:42 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1416.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2123.953 ; gain = 592.539
+add_files -fileset constrs_1 -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc}}
+set_property target_constrs_file {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc} [current_fileset -constrset]
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2128.020 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.344 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu Jul 18 22:00:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2164.344 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 16
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2275.816 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 2278.238 ; gain = 2.422
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2278.238 ; gain = 0.000
+[Thu Jul 18 22:02:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 18 22:08:24 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+[Thu Jul 18 22:08:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 2480.621 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.194 . Memory (MB): peak = 2480.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2480.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Jul 18 22:29:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+[Thu Jul 18 22:29:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Thu Jul 18 23:08:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+[Thu Jul 18 23:08:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.229 . Memory (MB): peak = 2480.621 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 2480.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2480.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2480.621 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Jul 19 15:40:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Fri Jul 19 15:40:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2480.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -jobs 16
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2480.621 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2480.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2480.621 ; gain = 0.000
+[Fri Jul 19 15:42:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.178 . Memory (MB): peak = 2536.379 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.179 . Memory (MB): peak = 2536.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Jul 19 15:45:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3799.887 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 19 15:47:47 2019...

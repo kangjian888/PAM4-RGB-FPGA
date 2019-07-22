@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jul 17 22:58:01 2019
+| Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file control_top_control_sets_placed.rpt
+| Design       : control_top
+| Device       : xc7a200t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            6 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              16 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             118 |           30 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                          Enable Signal                         |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
++-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/key_sec_reg_1[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/key_sec_reg_2[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[5].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/key_sec_reg_2[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 |                                                                |                                                                      |                4 |             16 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[1].debounce_inst/counter[21]_i_1_n_0    |                5 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[2].debounce_inst/counter[21]_i_1__0_n_0 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[5].debounce_inst/counter[21]_i_1__1_n_0 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[8].debounce_inst/counter[21]_i_1__2_n_0 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[2].debounce_inst/SR[0]                  |                7 |             30 |
++-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
+
+

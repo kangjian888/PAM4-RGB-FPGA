@@ -1,0 +1,179 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/modelsim/examples
+vdata_gen
+Z0 !s110 1563197952
+!i10b 1
+!s100 Q=WFZ:TS^SD76cz1In7a01
+IAE`?05F0eDQJ??iKh>z5d0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/kangj/Desktop/PAM4-RGB-FPGA/modelsim
+Z3 w1563190163
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/data_gen.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/data_gen.v
+Z4 L0 10
+Z5 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1563197952.000000
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/data_gen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/data_gen.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vdivider_even
+R0
+!i10b 1
+!s100 b?YaRVM>m>]USG>a`Bg3n0
+IK:i1KUbHWcKglYk:UXHnA3
+R1
+R2
+R3
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/clk_div.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/clk_div.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/clk_div.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/clk_div.v|
+!i113 1
+R7
+R8
+vedge_det
+Z9 !s110 1563197953
+!i10b 1
+!s100 RVLm5f<6k_^kUoZ3R:ZE;2
+Ine2FK:g]T2;HdJPXhL]<31
+R1
+R2
+w1563197719
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/edge_det.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/edge_det.v
+L0 9
+R5
+r1
+!s85 0
+31
+Z10 !s108 1563197953.000000
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/edge_det.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/edge_det.v|
+!i113 1
+R7
+R8
+vencoder
+R9
+!i10b 1
+!s100 Sm3o2fD89[F@ZB9B:3DGZ1
+I2eABC>Oa>^MA8k6KN^RUj1
+R1
+R2
+R3
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/encoder.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/encoder.v
+L0 9
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/encoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/encoder.v|
+!i113 1
+R7
+R8
+vPRBS_ANY
+R9
+!i10b 1
+!s100 QIeSaGCbCBO9F<_bV?_eg0
+I@o;BbZ1dM4VdB]o3A]_?c3
+R1
+R2
+w1563192697
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/prbs_any.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/prbs_any.v
+L0 109
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/prbs_any.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/prbs_any.v|
+!i113 1
+R7
+R8
+n@p@r@b@s_@a@n@y
+vreset_gen
+R9
+!i10b 1
+!s100 28Bze<?a[Am:AT?ooc`]o1
+Im_VMQ`3lbmoJGKB35Ll1l0
+R1
+R2
+R3
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/reset_gen.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/reset_gen.v
+L0 9
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/reset_gen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/reset_gen.v|
+!i113 1
+R7
+R8
+vtop
+R9
+!i10b 1
+!s100 H8hO4gMoHPcCUFjXGd^O22
+In5<U_M51@`:0`YDSLlG782
+R1
+R2
+w1563197785
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/top.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/top.v
+L0 9
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/src/top.v|
+!i113 1
+R7
+R8
+vtop_tb
+!s110 1563197954
+!i10b 1
+!s100 ebOYLAG5cHfSZ0Zf>]M9P0
+I6D_oUZXDm@Xz1Vg<28[VS1
+R1
+R2
+R3
+8C:/Users/kangj/Desktop/PAM4-RGB-FPGA/sim/top_tb.v
+FC:/Users/kangj/Desktop/PAM4-RGB-FPGA/sim/top_tb.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1563197954.000000
+!s107 C:/Users/kangj/Desktop/PAM4-RGB-FPGA/sim/top_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kangj/Desktop/PAM4-RGB-FPGA/sim/top_tb.v|
+!i113 1
+R7
+R8
