@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1'
+HD_PWD='D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

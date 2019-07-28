@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Jul 17 22:59:28 2019
+| Date             : Sat Jul 27 22:30:36 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file control_top_power_routed.rpt -pb control_top_power_summary_routed.pb -rpx control_top_power_routed.rpx
 | Design           : control_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.302        |
+| Total On-Chip Power (W)  | 0.307        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.164        |
+| Dynamic (W)              | 0.168        |
 | Device Static (W)        | 0.139        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.4         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.005 |        5 |       --- |             --- |
-| Slice Logic    |     0.001 |      415 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      138 |    133800 |            0.10 |
-|   CARRY4       |    <0.001 |       32 |     33450 |            0.10 |
-|   Register     |    <0.001 |      158 |    267600 |            0.06 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.002 |      372 |       --- |             --- |
+| Clocks         |     0.007 |        5 |       --- |             --- |
+| Slice Logic    |     0.002 |      842 |       --- |             --- |
+|   LUT as Logic |     0.002 |      297 |    133800 |            0.22 |
+|   CARRY4       |    <0.001 |       62 |     33450 |            0.19 |
+|   Register     |    <0.001 |      313 |    267600 |            0.12 |
+|   Others       |     0.000 |       22 |       --- |             --- |
+| Signals        |     0.003 |      757 |       --- |             --- |
 | MMCM           |     0.153 |        1 |        10 |           10.00 |
-| I/O            |     0.003 |       16 |       400 |            4.00 |
+| I/O            |     0.003 |       20 |       400 |            5.00 |
 | Static Power   |     0.139 |          |           |                 |
-| Total          |     0.302 |          |           |                 |
+| Total          |     0.307 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.040 |       0.009 |      0.030 |
+| Vccint    |       1.000 |     0.045 |       0.014 |      0.031 |
 | Vccaux    |       1.800 |     0.116 |       0.086 |      0.031 |
 | Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,17 +140,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------------+-----------+
-| Name                                 | Power (W) |
-+--------------------------------------+-----------+
-| control_top                          |     0.164 |
-|   clk_gen_inst                       |     0.157 |
-|     inst                             |     0.157 |
-|   control_inst                       |     0.006 |
-|     debounce_module[1].debounce_inst |     0.001 |
-|     debounce_module[2].debounce_inst |     0.001 |
-|     debounce_module[5].debounce_inst |     0.001 |
-|     debounce_module[8].debounce_inst |     0.001 |
-+--------------------------------------+-----------+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| control_top    |     0.168 |
+|   clk_gen_inst |     0.157 |
+|     inst       |     0.157 |
+|   control_inst |     0.011 |
++----------------+-----------+
 
 

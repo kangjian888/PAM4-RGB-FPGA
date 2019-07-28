@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jul 17 22:58:01 2019
+| Date         : Sat Jul 27 22:29:10 2019
 | Host         : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file control_top_control_sets_placed.rpt
 | Design       : control_top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    12 |
-| Unused register locations in slices containing registers |    34 |
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    71 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            6 |
-|    16+ |            6 |
+|      4 |           10 |
+|      9 |            1 |
+|    16+ |           11 |
 +--------+--------------+
 
 
@@ -45,12 +46,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              16 |            4 |
+| No           | No                    | No                     |              36 |            9 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             118 |           30 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |             228 |           59 |
+| Yes          | No                    | No                     |              49 |           13 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              24 |            6 |
+| Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -60,18 +61,28 @@ Table of Contents
 +-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
 |         Clock Signal        |                          Enable Signal                         |                           Set/Reset Signal                           | Slice Load Count | Bel Load Count |
 +-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/key_sec_reg_1[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[2].debounce_inst/key_sec_reg_2[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[5].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/key_sec_reg_2[0] | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/E[0]             | GPIO_SW_C_IBUF                                                       |                1 |              4 |
-|  clk_gen_inst/inst/clk_out1 |                                                                |                                                                      |                4 |             16 |
-|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[1].debounce_inst/counter[21]_i_1_n_0    |                5 |             22 |
-|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[2].debounce_inst/counter[21]_i_1__0_n_0 |                6 |             22 |
-|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[5].debounce_inst/counter[21]_i_1__1_n_0 |                6 |             22 |
-|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[8].debounce_inst/counter[21]_i_1__2_n_0 |                6 |             22 |
-|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[2].debounce_inst/SR[0]                  |                7 |             30 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[7].debounce_inst/key_sec_reg_2    |                                                                      |                2 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[7].debounce_inst/show_flag_reg[7] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/show_flag_reg[6] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/show_flag_reg[5] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[4].debounce_inst/show_flag_reg[6] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[0].debounce_inst/show_flag_reg[7] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[1].debounce_inst/key_sec_reg_1    |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[3].debounce_inst/key_sec_reg_1    |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[3].debounce_inst/key_sec_reg_3    |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[3].debounce_inst/show_flag_reg[0] |                                                                      |                1 |              4 |
+|  clk_gen_inst/inst/clk_out1 | control_inst/debounce_module[8].debounce_inst/show_flag_reg[1] |                                                                      |                2 |              9 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[7].debounce_inst/counter[21]_i_1__6_n_0 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[8].debounce_inst/counter[21]_i_1__7_n_0 |                5 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[4].debounce_inst/counter[21]_i_1__3_n_0 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[5].debounce_inst/counter[21]_i_1__4_n_0 |                5 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[6].debounce_inst/counter[21]_i_1__5_n_0 |                7 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[0].debounce_inst/p_0_in                 |                6 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[1].debounce_inst/counter[21]_i_1__0_n_0 |                5 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[2].debounce_inst/counter[21]_i_1__1_n_0 |                5 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[3].debounce_inst/counter[21]_i_1__2_n_0 |                7 |             22 |
+|  clk_gen_inst/inst/clk_out1 |                                                                | control_inst/debounce_module[8].debounce_inst/SR[0]                  |                7 |             30 |
+|  clk_gen_inst/inst/clk_out1 |                                                                |                                                                      |                9 |             36 |
 +-----------------------------+----------------------------------------------------------------+----------------------------------------------------------------------+------------------+----------------+
 
 

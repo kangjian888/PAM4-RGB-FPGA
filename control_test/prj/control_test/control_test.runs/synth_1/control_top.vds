@@ -2,12 +2,12 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Jul 17 22:55:56 2019
-# Process ID: 27596
-# Current directory: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1
+# Start of session at: Sat Jul 27 22:27:32 2019
+# Process ID: 28288
+# Current directory: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1
 # Command line: vivado.exe -log control_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source control_top.tcl
-# Log file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/control_top.vds
-# Journal file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1\vivado.jou
+# Log file: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/control_top.vds
+# Journal file: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source control_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -15,131 +15,132 @@ WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'v:/vivado/Arm_ipi_
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx2018.3/Vivado/2018.3/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.cache/ip 
+Current IP cache path is d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.cache/ip 
 Command: synth_design -top control_top -part xc7a200tfbg676-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17180 
+INFO: Helper process launched with PID 16988 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 384.371 ; gain = 100.277
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 384.074 ; gain = 99.258
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'control_top' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control_top.v:9]
-INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/.Xil/Vivado-27596-DESKTOP-B3RT09T/realtime/clk_gen_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/.Xil/Vivado-27596-DESKTOP-B3RT09T/realtime/clk_gen_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:10]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
+INFO: [Synth 8-6157] synthesizing module 'control_top' [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/.Xil/Vivado-28288-DESKTOP-B3RT09T/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (1#1) [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/.Xil/Vivado-28288-DESKTOP-B3RT09T/realtime/clk_gen_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:10]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
 	Parameter CLK_PERIOD bound to: 5 - type: integer 
 	Parameter CNT_BIT_NUM bound to: 29 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:12]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:12]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
 	Parameter CLK_PERIOD bound to: 5 - type: integer 
 	Parameter CNT_BIT_NUM bound to: 22 - type: integer 
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:12]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
-WARNING: [Synth 8-6104] Input port 'value' has an internal driver [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (2#1) [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/debounce.v:12]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
+WARNING: [Synth 8-6104] Input port 'value' has an internal driver [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:474]
 INFO: [Common 17-14] Message 'Synth 8-6104' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'control' (3#1) [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'control_top' (4#1) [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control_top.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'control' (3#1) [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:10]
+WARNING: [Synth 8-3848] Net GPIO_SW_C in module/entity control_top does not have driver. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control_top.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'control_top' (4#1) [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control_top.v:9]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.902 ; gain = 155.809
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 440.281 ; gain = 155.465
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -148,67 +149,79 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin control_inst:g_rst to constant 0 [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control_top.v:57]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.902 ; gain = 155.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 440.281 ; gain = 155.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 439.902 ; gain = 155.809
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 440.281 ; gain = 155.465
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a200tfbg676-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk_gen_inst'
-Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk_gen_inst'
-Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/control_top_propImpl.xdc].
+Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk_gen_inst'
+Finished Parsing XDC File [d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc] for cell 'clk_gen_inst'
+Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_N'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_N'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_S'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_S'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_W'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_W'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_C'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_C'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_E'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'GPIO_SW_E'. [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc:28]
+Finished Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/control_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/cons/top_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/control_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/control_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 839.824 ; gain = 0.000
+Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.371 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 839.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.824 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 839.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.371 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 840.371 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for SYSCLK_N. (constraint file  {c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for SYSCLK_N. (constraint file  {c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 4).
-Applied set_property IO_BUFFER_TYPE = NONE for SYSCLK_P. (constraint file  {c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 5).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for SYSCLK_P. (constraint file  {c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for SYSCLK_N. (constraint file  {d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYSCLK_N. (constraint file  {d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for SYSCLK_P. (constraint file  {d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYSCLK_P. (constraint file  {d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen/clk_gen_in_context.xdc}, line 6).
 Applied set_property DONT_TOUCH = true for clk_gen_inst. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:158]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:189]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:220]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:251]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:282]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:313]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:344]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:375]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/control.v:406]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:158]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:189]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:220]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:251]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:282]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:313]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:344]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:375]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/src/control.v:406]
 INFO: [Synth 8-5546] ROM "show_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "show_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "show_flag" won't be mapped to RAM because it is too sparse
@@ -231,7 +244,7 @@ INFO: [Synth 8-5546] ROM "b_falling_delay_value" won't be mapped to RAM because 
 INFO: [Synth 8-5546] ROM "LED_OUTPUT" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -316,19 +329,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[3].debounce_inst/key_rst_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:32]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[3].debounce_inst/key_rst_pre_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_pre_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:33]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[4].debounce_inst/key_rst_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:32]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[4].debounce_inst/key_rst_pre_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_pre_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:33]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[6].debounce_inst/key_rst_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:32]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[6].debounce_inst/key_rst_pre_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_pre_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:33]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[7].debounce_inst/key_rst_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:32]
-INFO: [Synth 8-4471] merging register 'control_inst/debounce_module[7].debounce_inst/key_rst_pre_reg' into 'control_inst/debounce_module[0].debounce_inst/key_rst_pre_reg' [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/src/debounce.v:33]
-INFO: [Synth 8-5546] ROM "control_inst/debounce_module[0].debounce_inst/key_sec" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "control_inst/debounce_module[3].debounce_inst/key_sec" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "control_inst/debounce_module[4].debounce_inst/key_sec" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "control_inst/debounce_module[6].debounce_inst/key_sec" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "control_inst/debounce_module[7].debounce_inst/key_sec" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "control_inst/show_flag" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "control_inst/show_flag" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "control_inst/show_flag" won't be mapped to RAM because it is too sparse
@@ -349,18 +349,8 @@ INFO: [Synth 8-5546] ROM "control_inst/r_falling_delay_value" won't be mapped to
 INFO: [Synth 8-5546] ROM "control_inst/g_falling_delay_value" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "control_inst/b_falling_delay_value" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "control_inst/LED_OUTPUT" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-3886] merging instance 'control_inst/debounce_module[0].debounce_inst/key_sec_reg' (FD) to 'control_inst/debounce_module[7].debounce_inst/key_sec_reg'
-INFO: [Synth 8-3886] merging instance 'control_inst/debounce_module[0].debounce_inst/key_rst_reg' (FD) to 'control_inst/debounce_module[7].debounce_inst/key_sec_reg'
-INFO: [Synth 8-3886] merging instance 'control_inst/debounce_module[7].debounce_inst/key_sec_reg' (FD) to 'control_inst/debounce_module[6].debounce_inst/key_sec_reg'
-INFO: [Synth 8-3886] merging instance 'control_inst/debounce_module[6].debounce_inst/key_sec_reg' (FD) to 'control_inst/debounce_module[4].debounce_inst/key_sec_reg'
-INFO: [Synth 8-3886] merging instance 'control_inst/debounce_module[4].debounce_inst/key_sec_reg' (FD) to 'control_inst/debounce_module[3].debounce_inst/key_sec_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\control_inst/debounce_module[3].debounce_inst/key_sec_reg )
-INFO: [Synth 8-3886] merging instance 'control_inst/show_flag_reg[7]' (FDRE) to 'control_inst/show_flag_reg[6]'
-INFO: [Synth 8-3886] merging instance 'control_inst/show_flag_reg[0]' (FDRE) to 'control_inst/show_flag_reg[6]'
-INFO: [Synth 8-3886] merging instance 'control_inst/show_flag_reg[6]' (FDRE) to 'control_inst/show_flag_reg[4]'
-INFO: [Synth 8-3886] merging instance 'control_inst/show_flag_reg[4]' (FDRE) to 'control_inst/show_flag_reg[3]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,13 +364,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_gen_inst/clk_out1' to pin 'clk_gen_inst/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 839.824 ; gain = 555.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 840.371 ; gain = 555.555
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -392,7 +382,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,7 +406,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -429,7 +419,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -441,25 +431,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -477,14 +467,14 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |clk_gen |     1|
-|2     |CARRY4  |    32|
-|3     |LUT2    |    92|
-|4     |LUT3    |     5|
-|5     |LUT4    |    67|
-|6     |LUT5    |    37|
-|7     |LUT6    |    12|
-|8     |FDRE    |   158|
-|9     |IBUF    |     6|
+|2     |CARRY4  |    62|
+|3     |LUT2    |   240|
+|4     |LUT3    |    14|
+|5     |LUT4    |    76|
+|6     |LUT5    |    61|
+|7     |LUT6    |    54|
+|8     |FDRE    |   313|
+|9     |IBUF    |    10|
 |10    |OBUF    |     8|
 +------+--------+------+
 
@@ -492,35 +482,40 @@ Report Instance Areas:
 +------+---------------------------------------+-----------+------+
 |      |Instance                               |Module     |Cells |
 +------+---------------------------------------+-----------+------+
-|1     |top                                    |           |   418|
-|2     |  control_inst                         |control    |   403|
-|3     |    \debounce_module[1].debounce_inst  |debounce   |    64|
-|4     |    \debounce_module[2].debounce_inst  |debounce_0 |    69|
-|5     |    \debounce_module[5].debounce_inst  |debounce_1 |    76|
-|6     |    \debounce_module[8].debounce_inst  |debounce_2 |    68|
+|1     |top                                    |           |   839|
+|2     |  control_inst                         |control    |   820|
+|3     |    \debounce_module[0].debounce_inst  |debounce   |    79|
+|4     |    \debounce_module[1].debounce_inst  |debounce_0 |    70|
+|5     |    \debounce_module[2].debounce_inst  |debounce_1 |    64|
+|6     |    \debounce_module[3].debounce_inst  |debounce_2 |    73|
+|7     |    \debounce_module[4].debounce_inst  |debounce_3 |    67|
+|8     |    \debounce_module[5].debounce_inst  |debounce_4 |    69|
+|9     |    \debounce_module[6].debounce_inst  |debounce_5 |    64|
+|10    |    \debounce_module[7].debounce_inst  |debounce_6 |    76|
+|11    |    \debounce_module[8].debounce_inst  |debounce_7 |    76|
 +------+---------------------------------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 847.758 ; gain = 163.742
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 847.758 ; gain = 563.664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 852.109 ; gain = 167.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 852.109 ; gain = 567.293
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 852.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-98 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+75 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 847.902 ; gain = 575.281
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 847.902 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 852.109 ; gain = 578.758
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 852.109 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/control_top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/control_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file control_top_utilization_synth.rpt -pb control_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 22:56:42 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 22:28:21 2019...

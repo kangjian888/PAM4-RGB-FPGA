@@ -22,27 +22,27 @@ create_project -in_memory -part xc7a200tfbg676-2
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.xpr} [current_project]
+set_property webtalk.parent_dir {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.cache/wt} [current_project]
+set_property parent.project_path {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
 set_property ip_repo_paths v:/vivado/Arm_ipi_repository [current_project]
 update_ip_catalog
-set_property ip_output_repo {c:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.cache/ip} [current_project]
+set_property ip_output_repo {d:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v}
-  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/clk_div.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/control.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/data_gen.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/debounce.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/edge_det.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/encoder.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/eq_delay.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/init_delay.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/prbs_any.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/reset_gen.v}
+  {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/src/top.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -52,11 +52,11 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}]
+read_xdc {{D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}
+set_property used_in_implementation false [get_files {{D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/cons/top_io_cons.xdc}}]
 
-read_xdc {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/time_cons.xdc}}]
+read_xdc {{D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/cons/time_cons.xdc}}
+set_property used_in_implementation false [get_files {{D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/cons/time_cons.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

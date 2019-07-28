@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/cons/top_io_cons.xdc} rfile:../../../../../cons/top_io_cons.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/cons/top_io_cons.xdc} rfile:../../../../../cons/top_io_cons.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J23 [get_ports USER_SMA_CLOCK_P]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

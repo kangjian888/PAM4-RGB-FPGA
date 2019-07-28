@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 27 20:55:17 2019
+# Process ID: 26000
+# Current directory: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25328 D:\OneDrive - HKUST Connect\Lab\PAM4-RGB-FPGA\control_test\prj\control_test\control_test.xpr
+# Log file: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/vivado.log
+# Journal file: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/control_test/prj/control_test' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'V:/vivado/Arm_ipi_repository'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'v:/vivado/Arm_ipi_repository'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilinx2018.3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 709.297 ; gain = 60.176
+update_compile_order -fileset sources_1open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/impl_1/control_top.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a200t_0] 0] [lindex [get_cfgmem_parts {mt25ql256-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a200t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a200t (JTAG device index = 0) is not programmed (DONE status = 0).
+close_hw
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/ips/clk_gen/clk_gen.xci' is already up-to-date
+[Sat Jul 27 22:27:31 2019] Launched synth_1...
+Run output will be captured here: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/synth_1/runme.log
+[Sat Jul 27 22:27:31 2019] Launched impl_1...
+Run output will be captured here: D:/OneDrive - HKUST Connect/Lab/PAM4-RGB-FPGA/control_test/prj/control_test/control_test.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 22:32:06 2019...
