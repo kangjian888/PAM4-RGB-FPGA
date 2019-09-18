@@ -78,6 +78,28 @@ set_property IOSTANDARD LVCMOS25 [get_ports send_stop_button]
 set_property PACKAGE_PIN R8 [get_ports inverse_sw]
 set_property IOSTANDARD SSTL15 [get_ports inverse_sw]
 
+#DIP_SW1
+set_property PACKAGE_PIN P8 [get_ports r_enable]
+set_property IOSTANDARD SSTL15 [get_ports r_enable]
+
+#DIP_SW2
+set_property PACKAGE_PIN R7 [get_ports g_enable]
+set_property IOSTANDARD SSTL15 [get_ports g_enable]
+
+#DIP_SW3
+set_property PACKAGE_PIN R6 [get_ports b_enable]
+set_property IOSTANDARD SSTL15 [get_ports b_enable]
+#LED on board used as status showing
+
+set_property PACKAGE_PIN M26 [get_ports led_status_0]
+set_property IOSTANDARD LVCMOS33 [get_ports led_status_0]
+set_property PACKAGE_PIN T24 [get_ports led_status_1]
+set_property IOSTANDARD LVCMOS33 [get_ports led_status_1]
+set_property PACKAGE_PIN T25 [get_ports led_status_2]
+set_property IOSTANDARD LVCMOS33 [get_ports led_status_2]
+set_property PACKAGE_PIN R26 [get_ports led_status_3]
+set_property IOSTANDARD LVCMOS33 [get_ports led_status_3]
+
 #LED on board
 #set_property PACKAGE_PIN M26 [get_ports led_out_0]
 #set_property IOSTANDARD LVCMOS33 [get_ports led_out_0]

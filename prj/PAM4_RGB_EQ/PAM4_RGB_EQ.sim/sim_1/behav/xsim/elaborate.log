@@ -1,0 +1,28 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx2018.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 97915e2b905e48b3b8213ff3d0669754 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.IBUFGDS
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.control_default
+Compiling module xil_defaultlib.debounce(CLK_PERIOD=50)
+Compiling module xil_defaultlib.divider_even(N=10)
+Compiling module xil_defaultlib.reset_gen
+Compiling module xil_defaultlib.PRBS_ANY(INV_PATTERN=1,POLY_LENG...
+Compiling module xil_defaultlib.data_gen(POLY_LENGHT=7,POLY_TAP=...
+Compiling module xil_defaultlib.encoder
+Compiling module xil_defaultlib.edge_det
+Compiling module xil_defaultlib.eq_delay
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.init_delay_default
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="LVDS_25")
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav

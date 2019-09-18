@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri Jul 19 15:44:53 2019
+| Date             : Wed Sep 18 14:10:58 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.380        |
+| Total On-Chip Power (W)  | 0.400        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.245        |
-| Device Static (W)        | 0.135        |
+| Dynamic (W)              | 0.249        |
+| Device Static (W)        | 0.151        |
 | Effective TJA (C/W)      | 1.9          |
 | Max Ambient (C)          | 84.3         |
 | Junction Temperature (C) | 25.7         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        4 |       --- |             --- |
-| Slice Logic    |     0.003 |     1231 |       --- |             --- |
-|   LUT as Logic |     0.002 |      431 |    133800 |            0.32 |
-|   Register     |    <0.001 |      487 |    267600 |            0.18 |
-|   CARRY4       |    <0.001 |       72 |     33450 |            0.22 |
-|   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |     0.003 |     1083 |       --- |             --- |
-| I/O            |     0.233 |       31 |       400 |            7.75 |
-| Static Power   |     0.135 |          |           |                 |
-| Total          |     0.380 |          |           |                 |
+| Clocks         |     0.007 |        4 |       --- |             --- |
+| Slice Logic    |     0.003 |     1297 |       --- |             --- |
+|   LUT as Logic |     0.003 |      459 |    133800 |            0.34 |
+|   Register     |    <0.001 |      515 |    267600 |            0.19 |
+|   CARRY4       |    <0.001 |       77 |     33450 |            0.23 |
+|   Others       |     0.000 |       36 |       --- |             --- |
+| Signals        |     0.004 |     1134 |       --- |             --- |
+| I/O            |     0.234 |       38 |       400 |            9.50 |
+| Static Power   |     0.151 |          |           |                 |
+| Total          |     0.400 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.044 |       0.014 |      0.031 |
+| Vccint    |       1.000 |     0.046 |       0.016 |      0.031 |
 | Vccaux    |       1.800 |     0.032 |       0.001 |      0.031 |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
 | Vcco25    |       2.500 |     0.097 |       0.092 |      0.005 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +138,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------+-----------+
-| Name           | Power (W) |
-+----------------+-----------+
-| top            |     0.245 |
-|   control_inst |     0.009 |
-+----------------+-----------+
++----------------------+-----------+
+| Name                 | Power (W) |
++----------------------+-----------+
+| top                  |     0.249 |
+|   control_inst       |     0.010 |
+|   eq_delay_inst      |     0.001 |
+|   init_delay_inst_eq |     0.001 |
++----------------------+-----------+
 
 

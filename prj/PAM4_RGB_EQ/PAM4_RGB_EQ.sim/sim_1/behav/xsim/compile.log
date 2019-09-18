@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divider_even
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3380] identifier 'counter' is used before its declaration [C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v:91]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eq_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module init_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS_ANY
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

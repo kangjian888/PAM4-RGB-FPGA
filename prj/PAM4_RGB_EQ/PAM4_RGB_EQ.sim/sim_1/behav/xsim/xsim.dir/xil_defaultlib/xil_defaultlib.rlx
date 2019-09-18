@@ -1,0 +1,17 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v,1568782858,verilog,,,,top_tb,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v,,divider_even,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v,,control,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v,1568786304,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v,,data_gen,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v,,debounce,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v,,edge_det,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v,1568785938,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v,,encoder,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/eq_delay.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v,,eq_delay,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/init_delay.v,1568012602,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v,,init_delay,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/prbs_any.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v,,PRBS_ANY,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/reset_gen.v,1568007724,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v,,reset_gen,,,,,,,,
+C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/top.v,1568785351,verilog,,C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/sim/top_tb.v,,top,,,,,,,,

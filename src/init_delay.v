@@ -8,7 +8,6 @@
 `timescale 1 ns / 1 ps
 module init_delay(
 	input clk,
-	input rst,
 	input [3:0] delay_r,
   input [3:0] delay_g,
   input [3:0] delay_b,

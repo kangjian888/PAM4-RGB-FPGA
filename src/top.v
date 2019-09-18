@@ -22,7 +22,10 @@ module top(
 	input r_falling_delay_button,
 	input g_falling_delay_button,
 	input b_falling_delay_button,
-	//output slow_rst, //for test
+	input r_enable,
+	input g_enable,
+	input b_enable,
+	//output slow_rst, //for simulation
 	output red_output_ref_p,
 	output red_output_ref_n,
 	output green_output_ref_p,
@@ -38,7 +41,11 @@ module top(
 	output led_out_3,
 	output led_out_2,
 	output led_out_1,
-	output led_out_0
+	output led_out_0,
+	output reg led_status_3,
+	output reg led_status_2,
+	output reg led_status_1,
+	output reg led_status_0
 );
 
 wire clk_x10_i;
@@ -59,6 +66,7 @@ wire [1:0] data_origin_i;
 wire send_enable_i;
 wire send_stop_i;
 wire [2:0] data_slow_reference_i;
+reg [2:0] data_slow_reference_i_i;
 wire [2:0] rising_edge_i;
 wire [2:0] falling_edge_i;
 wire [3:0] rising_delay_r_i;
@@ -75,6 +83,9 @@ wire [3:0] whole_delay_b_i;
 wire [2:0] reference_output_i;
 wire [2:0] eq_delay_output_i;
 wire [3:0] led_output_i;
+
+// Inner REG
+reg [19:0] counter_for_status_LED;
 //Control the button and LED
 control #(
     .CLK_PERIOD (CLOCK_PERIOD)//1000/5 = 200Mhz, the input clock is assumed to 200mhz 
@@ -130,7 +141,56 @@ debounce_inst_2
 	.key_pulse(send_stop_i)//generated pulse		
 );
 
-
+// Status LED
+always @ (posedge clk_x1)
+    begin
+        if(slow_rst_i)
+            begin
+        	   led_status_0 <= 1'b0;
+        	   led_status_1 <= 1'b0;
+        	   led_status_2 <= 1'b0;
+        	   led_status_3 <= 1'b0;
+        	   counter_for_status_LED <= 20'd0;
+            end
+        else
+            begin
+        	   counter_for_status_LED <= counter_for_status_LED + 1'b1;
+        	   if (counter_for_status_LED <= 20'd262143) 
+        	      begin
+        	   		led_status_0 <= 1'b1;
+        	   		led_status_1 <= 1'b0;
+        	   		led_status_2 <= 1'b0;
+        	   		led_status_3 <= 1'b0;        	   		
+        	   	  end
+        	   else 
+        	   	begin
+        	   		if (counter_for_status_LED <= 20'd524287) 
+        	   		    begin
+         	   				led_status_0 <= 1'b0;
+        	   				led_status_1 <= 1'b1;
+        	   				led_status_2 <= 1'b0;
+        	   				led_status_3 <= 1'b0;       	   				
+        	   			end
+        	   		else 
+        	   			begin
+        	   				if (counter_for_status_LED <= 20'd786432) 
+        	   				    begin
+        	   						led_status_0 <= 1'b0;
+        	   						led_status_1 <= 1'b0;
+        	   						led_status_2 <= 1'b1;
+        	   						led_status_3 <= 1'b0;
+        	   					end
+        	   				else 
+        	   					begin
+        	   						led_status_0 <= 1'b0;
+        	   						led_status_1 <= 1'b0;
+        	   						led_status_2 <= 1'b0;
+        	   						led_status_3 <= 1'b1;        	   						
+        	   					end
+        	   			end
+        	   	end
+            end
+    end
 //Clock divider
 divider_even
 #(
@@ -152,8 +212,8 @@ reset_gen reset_gen_inst(
 data_gen #
 (
 	.INV_PATTERN(1),
-	.POLY_LENGHT(9),
-	.POLY_TAP(5)//these parameter decide the PRBS PATTERN
+	.POLY_LENGHT(7),
+	.POLY_TAP(1)//these parameter decide the PRBS PATTERN
 )
 data_gen_inst
 (
@@ -171,10 +231,43 @@ encoder encoder_inst(
 	.data_out(data_slow_reference_i)
 );
 
+always @ (*)
+	begin
+		if (r_enable) 
+		    begin
+				data_slow_reference_i_i[2] <= data_slow_reference_i[2];
+			end
+		else 
+			begin
+				data_slow_reference_i_i[2] <= 1'b0;
+			end
+	end
+always @ (*)
+	begin
+		if (g_enable) 
+		    begin
+				data_slow_reference_i_i[1] <= data_slow_reference_i[1];
+			end
+		else 
+			begin
+				data_slow_reference_i_i[1] <= 1'b0;
+			end
+	end
+always @ (*)
+	begin
+		if (b_enable) 
+		    begin
+				data_slow_reference_i_i[0] <= data_slow_reference_i[0];
+			end
+		else 
+			begin
+				data_slow_reference_i_i[0] <= 1'b0;
+			end
+	end
 edge_det edge_det_inst(
 	.clk(clk_x10_i),
 	.rst(g_rst),
-	.data_in(data_slow_reference_i),
+	.data_in(data_slow_reference_i_i),
 	.rising_edge(rising_edge_i),
 	.falling_edge(falling_edge_i)
 );
@@ -198,7 +291,6 @@ eq_delay eq_delay_inst(
 // this model is used delay reference and eq_delay signal in the same time
 init_delay init_delay_inst_ref(
 	.clk(clk_x10_i),
-	.rst(g_rst),
 	.delay_r(whole_delay_r_i),
   	.delay_g(whole_delay_g_i),
   	.delay_b(whole_delay_b_i),
@@ -208,7 +300,6 @@ init_delay init_delay_inst_ref(
 
 init_delay init_delay_inst_eq(
 	.clk(clk_x10_i),
-	.rst(g_rst),
 	.delay_r(whole_delay_r_i),
   	.delay_g(whole_delay_g_i),
   	.delay_b(whole_delay_b_i),
@@ -265,6 +356,6 @@ OBUFDS #(
 .I(eq_delay_output_i[0]) // 缓冲器输入 
 ); 
 
-// for test
+// for simulation
 //assign slow_rst = slow_rst_i;
 endmodule

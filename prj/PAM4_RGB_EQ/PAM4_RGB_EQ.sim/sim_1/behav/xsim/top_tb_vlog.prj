@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../src/clk_div.v" \
+"../../../../../../src/control.v" \
+"../../../../../../src/data_gen.v" \
+"../../../../../../src/debounce.v" \
+"../../../../../../src/edge_det.v" \
+"../../../../../../src/encoder.v" \
+"../../../../../../src/eq_delay.v" \
+"../../../../../../src/init_delay.v" \
+"../../../../../../src/prbs_any.v" \
+"../../../../../../src/reset_gen.v" \
+"../../../../../../src/top.v" \
+"../../../../../../sim/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -11,7 +11,8 @@ module data_gen #
 (
 	parameter INV_PATTERN = 1,
 	parameter POLY_LENGHT = 9,
-	parameter POLY_TAP = 5//these parameter decide the PRBS PATTERN
+	parameter POLY_TAP = 5,//these parameter decide the PRBS PATTERN
+    parameter HEAD_LENGTH = 10
 )
 (
 	input clk,
@@ -29,7 +30,7 @@ SEND_HEAD = 1,
 SEND_PRBS = 2;
 
 reg [1:0] state_reg, state_next;
-reg [2:0] counter_reg, counter_next;
+reg [8:0] counter_reg, counter_next;
 reg prbs_send_enable = 1'b0;
 reg prbs_send_reset = 1'b1;
 wire [1:0] prbs_data_wire;
@@ -46,17 +47,27 @@ always @ (*)
                     end
                 SEND_HEAD:
                     begin
-                        if (counter_reg[0] == 1'b0) 
+                        if (counter_reg[1] == 1'b0) 
                             begin
-                                data_out = 2'd3;
-                                prbs_send_enable = 1'b0;
-                                prbs_send_reset = 1'b0;                                 
+                                if (counter_reg == HEAD_LENGTH - 1) 
+                                    begin
+                                        data_out = 2'd0;
+                                        prbs_send_enable = 1'b1;
+                                        prbs_send_reset = 1'b0;                                        
+                                    end
+                                else 
+                                    begin
+                                        data_out = 2'd0;
+                                        prbs_send_enable = 1'b0;
+                                        prbs_send_reset = 1'b0; 
+                                    end
+                                
                             end
                         else 
                             begin
-                                data_out = 2'd0;
+                                data_out = 2'd3;
                                 prbs_send_enable = 1'b0;
-                                prbs_send_reset = 1'b0;                                
+                                prbs_send_reset = 1'b0;                           
                             end                      
                     end
                SEND_PRBS:
@@ -93,7 +104,7 @@ always @ (*)
                 end
             SEND_HEAD:
                 begin
-                    if (counter_reg == 3'd5) 
+                    if (counter_reg == 9'd9) 
                         begin
                             state_next = SEND_PRBS;
                             counter_next = 0;
@@ -112,7 +123,7 @@ always @ (*)
             		    end
             		else 
             		    begin
-            		        state_next = SEND_PRBS;
+                            state_next = SEND_PRBS;                                    
             		    end
             	end
             default:

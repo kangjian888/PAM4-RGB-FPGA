@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=F:/xilinx2018.3/SDK/2018.3/bin;F:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;F:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:F:/xilinx2018.3/Vivado/2018.3/bin
+  PATH=E:/xilinx2018.3/SDK/2018.3/bin;E:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:E:/xilinx2018.3/Vivado/2018.3/bin
 else
-  PATH=F:/xilinx2018.3/SDK/2018.3/bin;F:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;F:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:F:/xilinx2018.3/Vivado/2018.3/bin:$PATH
+  PATH=E:/xilinx2018.3/SDK/2018.3/bin;E:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/bin/nt64;E:/xilinx2018.3/Vivado/2018.3/ids_lite/ISE/lib/nt64:E:/xilinx2018.3/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 

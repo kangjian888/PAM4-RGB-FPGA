@@ -19,7 +19,8 @@ localparam CLK_PERIOD = 2;  // clock period: 2ns
 // ----------------------------------
 // Interface of the tested module
 // ----------------------------------
-reg clk;
+reg sys_clk_p;
+reg sys_clk_n;
 reg rst;
 reg send_enable_button;
 reg send_stop_button;
@@ -33,6 +34,9 @@ reg b_rising_delay_button;
 reg r_falling_delay_button;
 reg g_falling_delay_button;
 reg b_falling_delay_button;
+reg r_enable;
+reg g_enable;
+reg b_enable;
 wire slow_rst;
 wire red_output_ref_p;
 wire red_output_ref_n;
@@ -50,11 +54,16 @@ wire led_out_3;
 wire led_out_2;
 wire led_out_1;
 wire led_out_0;
+wire led_status_3;
+wire led_status_2;
+wire led_status_1;
+wire led_status_0;
 // ----------------------------------
 // Instantiate the tested module
 // ----------------------------------
 top top_inst(
-	.clk_x10(clk), //fast clock
+	.USER_SMA_CLOCK_P(sys_clk_p), //fast clock
+  .USER_SMA_CLOCK_N(sys_clk_n),
 	.g_rst(rst),
   .slow_rst(slow_rst), //for test
 	.send_enable_button(send_enable_button),
@@ -68,6 +77,9 @@ top top_inst(
   .r_falling_delay_button(r_falling_delay_button),
   .g_falling_delay_button(g_falling_delay_button),
   .b_falling_delay_button(b_falling_delay_button),
+  .r_enable(r_enable),
+  .g_enable(g_enable),
+  .b_enable(b_enable),
   .red_output_ref_p(red_output_ref_p),
   .red_output_ref_n(red_output_ref_n),
   .green_output_ref_p(green_output_ref_p),
@@ -83,17 +95,25 @@ top top_inst(
   .led_out_3(led_out_3),
   .led_out_2(led_out_2),
   .led_out_1(led_out_1),
-  .led_out_0(led_out_0)
+  .led_out_0(led_out_0),
+  .led_status_3(led_status_3),
+  .led_status_2(led_status_2),
+  .led_status_1(led_status_1),
+  .led_status_0(led_status_0)
 );
 
 // ----------------------------------
 // Clock generation
 // ----------------------------------
 initial begin
-  clk = 1'b0;
-  forever #(CLK_PERIOD/2.0) clk = ~clk;
+  sys_clk_p = 1'b0;
+  forever #(CLK_PERIOD/2.0) sys_clk_p = ~sys_clk_p;
 end
 
+initial begin
+  sys_clk_n = 1'b1;
+  forever #(CLK_PERIOD/2.0) sys_clk_n = ~sys_clk_n;
+end
 // ----------------------------------
 // Input stimulus
 // Generate the ad-hoc stimulus
@@ -115,6 +135,9 @@ initial
   	send_enable_button = 1'b0;
   	send_stop_button = 1'b0;
     inverse_sw = 1'b1;
+    r_enable = 1'b1;
+    g_enable = 1'b1;
+    b_enable = 1'b1;
     r_whole_delay_button = 1'b0;
     g_whole_delay_button = 1'b0;
     b_whole_delay_button = 1'b0;
