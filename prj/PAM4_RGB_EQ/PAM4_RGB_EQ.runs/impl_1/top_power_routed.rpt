@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Sep 18 14:10:58 2019
+| Date             : Wed Sep 18 22:41:21 2019
 | Host             : DESKTOP-B3RT09T running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.400        |
+| Total On-Chip Power (W)  | 0.445        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.249        |
-| Device Static (W)        | 0.151        |
+| Dynamic (W)              | 0.294        |
+| Device Static (W)        | 0.152        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 84.3         |
-| Junction Temperature (C) | 25.7         |
+| Max Ambient (C)          | 84.2         |
+| Junction Temperature (C) | 25.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.007 |        4 |       --- |             --- |
-| Slice Logic    |     0.003 |     1297 |       --- |             --- |
-|   LUT as Logic |     0.003 |      459 |    133800 |            0.34 |
-|   Register     |    <0.001 |      515 |    267600 |            0.19 |
-|   CARRY4       |    <0.001 |       77 |     33450 |            0.23 |
-|   Others       |     0.000 |       36 |       --- |             --- |
-| Signals        |     0.004 |     1134 |       --- |             --- |
-| I/O            |     0.234 |       38 |       400 |            9.50 |
-| Static Power   |     0.151 |          |           |                 |
-| Total          |     0.400 |          |           |                 |
+| Clocks         |     0.006 |        4 |       --- |             --- |
+| Slice Logic    |     0.003 |     1380 |       --- |             --- |
+|   LUT as Logic |     0.003 |      490 |    133800 |            0.37 |
+|   Register     |    <0.001 |      552 |    267600 |            0.21 |
+|   CARRY4       |    <0.001 |       82 |     33450 |            0.25 |
+|   Others       |     0.000 |       39 |       --- |             --- |
+| Signals        |     0.004 |     1209 |       --- |             --- |
+| I/O            |     0.280 |       41 |       400 |           10.25 |
+| Static Power   |     0.152 |          |           |                 |
+| Total          |     0.445 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,10 +71,10 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.046 |       0.016 |      0.031 |
+| Vccint    |       1.000 |     0.045 |       0.014 |      0.031 |
 | Vccaux    |       1.800 |     0.032 |       0.001 |      0.031 |
 | Vcco33    |       3.300 |     0.005 |       0.000 |      0.005 |
-| Vcco25    |       2.500 |     0.097 |       0.092 |      0.005 |
+| Vcco25    |       2.500 |     0.116 |       0.111 |      0.005 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
@@ -128,7 +128,7 @@ Table of Contents
 | Clock                    | Domain                   | Constraint (ns) |
 +--------------------------+--------------------------+-----------------+
 | USER_SMA_CLOCK_P         | USER_SMA_CLOCK_P         |             5.0 |
-| divider_even_inst/clk_x1 | divider_even_inst/clk_x1 |            50.0 |
+| divider_even_inst/clk_x1 | divider_even_inst/clk_x1 |           100.0 |
 +--------------------------+--------------------------+-----------------+
 
 
@@ -138,13 +138,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------------------+-----------+
-| Name                 | Power (W) |
-+----------------------+-----------+
-| top                  |     0.249 |
-|   control_inst       |     0.010 |
-|   eq_delay_inst      |     0.001 |
-|   init_delay_inst_eq |     0.001 |
-+----------------------+-----------+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| top            |     0.294 |
+|   control_inst |     0.010 |
++----------------+-----------+
 
 

@@ -27,7 +27,7 @@ module control #(
   output reg [3:0] g_whole_delay_value,
   output reg [3:0] b_whole_delay_value,
   output reg [3:0] r_rising_delay_value,
-  output reg[3:0] g_rising_delay_value,
+  output reg [3:0] g_rising_delay_value,
   output reg [3:0] b_rising_delay_value,
   output reg [3:0] r_falling_delay_value,
   output reg [3:0] g_falling_delay_value,
@@ -73,14 +73,14 @@ always @ (posedge clk_x10)
             begin
              show_flag <= 0;
              r_whole_delay_value <= 4'd0;
-         g_whole_delay_value <= 4'd0;
-         b_whole_delay_value <= 4'd0;
-         r_rising_delay_value <= 4'd0;
-         g_rising_delay_value <= 4'd0;
-         b_rising_delay_value <= 4'd0;
-         r_falling_delay_value <= 4'd0;
-         g_falling_delay_value <= 4'd0;
-         b_falling_delay_value <= 4'd0;
+             g_whole_delay_value <= 4'd0;
+             b_whole_delay_value <= 4'd0;
+             r_rising_delay_value <= 4'd0;
+             g_rising_delay_value <= 4'd0;
+             b_rising_delay_value <= 4'd0;
+             r_falling_delay_value <= 4'd0;
+             g_falling_delay_value <= 4'd0;
+             b_falling_delay_value <= 4'd0;
              LED_OUTPUT <= 4'd0;
             end
         else
@@ -145,13 +145,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= r_whole_delay_value;
                          if (show_flag == 9'd256) 
                           begin
-                            if (r_whole_delay_value == 4'd10 && inverse) 
+                            if (r_whole_delay_value == 4'd15 && inverse) 
                                 begin
                                 r_whole_delay_value <= 0;
                               end
                                 else if (r_whole_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        r_whole_delay_value <= 4'd10;
+                                        r_whole_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -176,13 +176,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= g_whole_delay_value;
                            if (show_flag == 9'd128) 
                             begin
-                                if (g_whole_delay_value == 4'd10 && inverse) 
+                                if (g_whole_delay_value == 4'd15 && inverse) 
                                     begin
                                         g_whole_delay_value <= 0;
                                     end
                                 else if (g_whole_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        g_whole_delay_value <= 4'd10;
+                                        g_whole_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -207,13 +207,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= b_whole_delay_value;
                            if (show_flag == 9'd64) 
                             begin
-                                if (b_whole_delay_value == 4'd10 && inverse) 
+                                if (b_whole_delay_value == 4'd15 && inverse) 
                                     begin
                                         b_whole_delay_value <= 0;
                                     end
                                 else if (b_whole_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        b_whole_delay_value <= 4'd10;
+                                        b_whole_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -238,13 +238,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= r_rising_delay_value;
                            if (show_flag == 9'd32) 
                             begin
-                                if (r_rising_delay_value == 4'd10 && inverse) 
+                                if (r_rising_delay_value == 4'd15 && inverse) 
                                     begin
                                         r_rising_delay_value <= 0;
                                     end
                                 else if (r_rising_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        r_rising_delay_value <= 4'd10;
+                                        r_rising_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -269,13 +269,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= g_rising_delay_value;
                            if (show_flag == 9'd16) 
                             begin
-                                if (g_rising_delay_value == 4'd10 && inverse) 
+                                if (g_rising_delay_value == 4'd15 && inverse) 
                                     begin
                                         g_rising_delay_value <= 0;
                                     end
                                 else if (g_rising_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        g_rising_delay_value <= 4'd10;
+                                        g_rising_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -300,13 +300,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= b_rising_delay_value;
                            if (show_flag == 9'd8) 
                             begin
-                                if (b_rising_delay_value == 4'd10 && inverse) 
+                                if (b_rising_delay_value == 4'd15 && inverse) 
                                     begin
                                         b_rising_delay_value <= 0;
                                     end
                                 else if (b_rising_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        b_rising_delay_value <= 4'd10;
+                                        b_rising_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -331,13 +331,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= r_falling_delay_value;
                            if (show_flag == 9'd4) 
                             begin
-                                if (r_falling_delay_value == 4'd10 && inverse) 
+                                if (r_falling_delay_value == 4'd15 && inverse) 
                                     begin
                                         r_falling_delay_value <= 0;
                                     end
                                 else if (r_falling_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        r_falling_delay_value <= 4'd10;
+                                        r_falling_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -362,13 +362,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= g_falling_delay_value;
                            if (show_flag == 9'd2) 
                             begin
-                                if (g_falling_delay_value == 4'd10 && inverse) 
+                                if (g_falling_delay_value == 4'd15 && inverse) 
                                     begin
                                         g_falling_delay_value <= 0;
                                     end
                                 else if (g_falling_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        g_falling_delay_value <= 4'd10;
+                                        g_falling_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin
@@ -393,13 +393,13 @@ always @ (posedge clk_x10)
                            LED_OUTPUT <= b_falling_delay_value;
                            if (show_flag == 9'd1) 
                             begin
-                                if (b_falling_delay_value == 4'd10 && inverse) 
+                                if (b_falling_delay_value == 4'd15 && inverse) 
                                     begin
                                         b_falling_delay_value <= 0;
                                     end
                                 else if (b_falling_delay_value == 4'd0 && !inverse) 
                                     begin
-                                        b_falling_delay_value <= 4'd10;
+                                        b_falling_delay_value <= 4'd15;
                                     end
                                 else 
                                     begin

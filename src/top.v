@@ -25,6 +25,7 @@ module top(
 	input r_enable,
 	input g_enable,
 	input b_enable,
+	input mode_choice_button,//choose ook prbs or pam4
 	//output slow_rst, //for simulation
 	output red_output_ref_p,
 	output red_output_ref_n,
@@ -45,7 +46,9 @@ module top(
 	output reg led_status_3,
 	output reg led_status_2,
 	output reg led_status_1,
-	output reg led_status_0
+	output reg led_status_0,
+	output clk_reference_p,
+	output clk_reference_n
 );
 
 wire clk_x10_i;
@@ -65,6 +68,7 @@ wire slow_rst_i; // slow reset
 wire [1:0] data_origin_i;
 wire send_enable_i;
 wire send_stop_i;
+wire mode_choice_i;
 wire [2:0] data_slow_reference_i;
 reg [2:0] data_slow_reference_i_i;
 wire [2:0] rising_edge_i;
@@ -77,6 +81,7 @@ wire [3:0] rising_delay_b_i;
 wire [3:0] falling_delay_b_i;
 wire [2:0] eq_delay_i;
 wire [2:0] reference_i;
+wire ook_prbs_reference_i;
 wire [3:0] whole_delay_r_i;
 wire [3:0] whole_delay_g_i;
 wire [3:0] whole_delay_b_i;
@@ -141,6 +146,29 @@ debounce_inst_2
 	.key_pulse(send_stop_i)//generated pulse		
 );
 
+debounce #(
+	.CLK_PERIOD(CLOCK_PERIOD*10)//1000/5 = 200Mhz, this is data in this application
+)
+debounce_inst_3
+(
+	.clk(clk_x1),
+	.key(mode_choice_button),//input key signal
+	.key_pulse(mode_choice_i)//generated pulse		
+);
+
+reg mode_choice = 1'b0;
+always @ (posedge clk_x1)
+    begin
+        if(mode_choice_i)
+            begin
+        	   mode_choice <= !mode_choice;
+            end
+        else
+            begin
+        	   mode_choice <= mode_choice;
+            end
+    end
+
 // Status LED
 always @ (posedge clk_x1)
     begin
@@ -194,7 +222,7 @@ always @ (posedge clk_x1)
 //Clock divider
 divider_even
 #(
-	.N(10)
+	.N(20)
 )
 divider_even_inst
 (
@@ -209,9 +237,11 @@ reset_gen reset_gen_inst(
 	.g_rst(g_rst),
 	.slow_rst(slow_rst_i)
 );
+
+//generate PAM-4 pattern
 data_gen #
 (
-	.INV_PATTERN(1),
+	.INV_PATTERN(0),
 	.POLY_LENGHT(7),
 	.POLY_TAP(1)//these parameter decide the PRBS PATTERN
 )
@@ -223,7 +253,6 @@ data_gen_inst
     .send_stop(send_stop_i), //finish to send data
 	.data_out(data_origin_i)
 );
-
 encoder encoder_inst(
 	.clk(clk_x1),
 	.rst(slow_rst_i),
@@ -231,11 +260,34 @@ encoder encoder_inst(
 	.data_out(data_slow_reference_i)
 );
 
+//Generate OOK PRBS pattern
+data_gen_ook #
+(
+	.INV_PATTERN(0),
+	.POLY_LENGHT(7),
+	.POLY_TAP(1)//these parameter decide the PRBS PATTERN
+)
+data_gen_ook_inst
+(
+	.clk(clk_x1),
+	.rst(slow_rst_i),
+	.send_enable(send_enable_i), //begin to send a frame data
+	.data_out(ook_prbs_reference_i)
+);
+//Data enable and OOK/PAM mode
 always @ (*)
 	begin
 		if (r_enable) 
 		    begin
-				data_slow_reference_i_i[2] <= data_slow_reference_i[2];
+		    	if (!mode_choice) 
+		    	    begin
+						data_slow_reference_i_i[2] <= data_slow_reference_i[2];		    			
+		    		end
+		    	else 
+		    		begin
+		    			data_slow_reference_i_i[2] <= ook_prbs_reference_i;
+		    		end
+
 			end
 		else 
 			begin
@@ -246,7 +298,14 @@ always @ (*)
 	begin
 		if (g_enable) 
 		    begin
-				data_slow_reference_i_i[1] <= data_slow_reference_i[1];
+		    	if (!mode_choice) 
+		    	    begin
+						data_slow_reference_i_i[1] <= data_slow_reference_i[1];		    			
+		    		end
+		    	else 
+		    		begin
+		    			data_slow_reference_i_i[1] <= ook_prbs_reference_i;
+		    		end
 			end
 		else 
 			begin
@@ -257,7 +316,14 @@ always @ (*)
 	begin
 		if (b_enable) 
 		    begin
-				data_slow_reference_i_i[0] <= data_slow_reference_i[0];
+		    	if (!mode_choice) 
+		    	    begin
+						data_slow_reference_i_i[0] <= data_slow_reference_i[0];		    			
+		    		end
+		    	else 
+		    		begin
+		    			data_slow_reference_i_i[0] <= ook_prbs_reference_i;
+		    		end
 			end
 		else 
 			begin
@@ -355,7 +421,15 @@ OBUFDS #(
 .OB(blue_output_delay_n), // 差分负端输出，直接连接到顶层模块端口 
 .I(eq_delay_output_i[0]) // 缓冲器输入 
 ); 
-
+// Output CLK Reference
+OBUFDS #( 
+.IOSTANDARD("LVDS_25") 
+// 指名输出端口的电平标准 
+) OBUFDS_7 ( 
+.O(clk_reference_p), // 差分正端输出，直接连接到顶层模块端口 
+.OB(clk_reference_n), // 差分负端输出，直接连接到顶层模块端口 
+.I(clk_x1) // 缓冲器输入 
+); 
 // for simulation
 //assign slow_rst = slow_rst_i;
 endmodule

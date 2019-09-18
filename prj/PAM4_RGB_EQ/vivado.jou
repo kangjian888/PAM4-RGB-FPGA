@@ -2,43 +2,18 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Sep  9 13:42:23 2019
-# Process ID: 26068
+# Start of session at: Wed Sep 18 18:29:46 2019
+# Process ID: 24024
 # Current directory: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22172 C:\Users\KANG Jian\Desktop\PAM4-RGB-FPGA\prj\PAM4_RGB_EQ\PAM4_RGB_EQ.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12196 C:\Users\KANG Jian\Desktop\PAM4-RGB-FPGA\prj\PAM4_RGB_EQ\PAM4_RGB_EQ.xpr
 # Log file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/vivado.log
 # Journal file: C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.xpr}
 update_compile_order -fileset sources_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-current_hw_device [get_hw_devices xc7a200t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-close_hw
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-current_hw_device [get_hw_devices xc7a200t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-close_hw
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
+add_files -norecurse {{C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen_ook.v}}
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs synth_1 -jobs 16
 wait_on_run synth_1
@@ -50,25 +25,27 @@ launch_runs synth_1 -jobs 16
 wait_on_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
-set_property PROGRAM.FILE {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/PAM4_RGB_EQ.runs/impl_1/top.bit} [get_hw_devices xc7a200t_0]
-program_hw_devices [get_hw_devices xc7a200t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
-close_hw
 open_run impl_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 16
-wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
 open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 16
 wait_on_run impl_1
+close_design
+close_design

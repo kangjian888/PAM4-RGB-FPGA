@@ -24,23 +24,23 @@ always @ (posedge clk)
         	   case (data_in) 
         	       2'b00:
         	           begin
-        	               data_out <= 3'b111;
+        	               data_out <= 3'b000;
         	           end
         	       2'b01:
         	           begin
-        	               data_out <= 3'b011;
+        	               data_out <= 3'b001;
         	           end
         	       2'b10:
         	           begin
-        	               data_out <= 3'b001;
+        	               data_out <= 3'b011;
         	           end
         	       2'b11:
         	       		begin
-        	       			data_out <= 3'b000;
+        	       		   data_out <= 3'b111;
         	       		end
         	       default:
         	       		begin
-        	       			data_out <= 3'b000;
+        	       		   data_out <= 3'b000;
         	       		end
         	   endcase
             end

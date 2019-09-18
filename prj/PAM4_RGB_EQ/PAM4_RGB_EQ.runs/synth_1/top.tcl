@@ -17,7 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/prj/PAM4_RGB_EQ/.Xil/Vivado-24024-DESKTOP-B3RT09T/incrSyn}
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -36,6 +38,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/clk_div.v}
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/control.v}
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen.v}
+  {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/data_gen_ook.v}
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/debounce.v}
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/edge_det.v}
   {C:/Users/KANG Jian/Desktop/PAM4-RGB-FPGA/src/encoder.v}

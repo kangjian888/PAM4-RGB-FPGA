@@ -123,3 +123,26 @@ set_property IOSTANDARD LVCMOS25 [get_ports led_out_1]
 #LA19N
 set_property PACKAGE_PIN L14 [get_ports led_out_0]
 set_property IOSTANDARD LVCMOS25 [get_ports led_out_0]
+
+#DIP Button
+#SW_N
+#set_property PACKAGE_PIN P6 [get_ports GPIO_SW_N]
+#set_property IOSTANDARD LVCMOS15 [get_ports GPIO_SW_N]
+#SW_S
+#set_property PACKAGE_PIN T5 [get_ports GPIO_SW_S]
+#set_property IOSTANDARD SSTL15 [get_ports GPIO_SW_S]
+#SW_W
+#set_property PACKAGE_PIN R5 [get_ports GPIO_SW_W]
+#set_property IOSTANDARD SSTL15 [get_ports GPIO_SW_W]
+#SW_C
+set_property PACKAGE_PIN U6 [get_ports mode_choice_button]
+set_property IOSTANDARD SSTL15 [get_ports mode_choice_button]
+#SW_E
+#set_property PACKAGE_PIN U5 [get_ports GPIO_SW_E]
+#set_property IOSTANDARD SSTL15 [get_ports GPIO_SW_E]
+
+#USER SMA GPIO to output clk reference used to trigger oscilloscope
+set_property PACKAGE_PIN T8 [get_ports clk_reference_p]
+set_property IOSTANDARD LVDS_25 [get_ports clk_reference_p]
+set_property PACKAGE_PIN T7 [get_ports clk_reference_n]
+set_property IOSTANDARD LVDS_25 [get_ports clk_reference_n]
